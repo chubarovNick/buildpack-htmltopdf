@@ -16,7 +16,7 @@ ENV_FILE=$3
 [ -f "$ENV_FILE" ] && export $(grep 'SBT_CLEAN' $ENV_FILE)
 
 # Move app to a static build dir to keep paths the same between builds
-BUILD_DIR="/tmp/scala_buildpack_build_dir"
+BUILD_DIR="/tmp/wkhtmltopdf_buildpack_build_dir"
 mv $APP_BUILD_DIR $BUILD_DIR
 
 install_wkhtmltopdf
