@@ -3,8 +3,8 @@
 install_wkhtmltopdf()
 {
   cd $BUILD_DIR
-  WKH_URL="http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.9.9-static-amd64.tar.bz2"
-  WKH_TAR_FILE="wkhtmltopdf-0.9.9-static-amd64.tar.bz2"
+  WKH_URL="http://heanet.dl.sourceforge.net/project/wkhtmltopdf/0.12.0/wkhtmltox-linux-amd64_0.12.0-03c001d.tar.xz"
+  WKH_TAR_FILE="wkhtmltox-linux-amd64_0.12.0-03c001d.tar.xz"
   echo "-----> Installing wkhtmltopdf..."
   curl --silent --max-time 150 --location $WKH_URL -o $WKH_TAR_FILE
   if [ ! -f $WKH_TAR_FILE ]; then
@@ -12,8 +12,8 @@ install_wkhtmltopdf()
     exit 1
   fi
   mkdir -p vendor/wkhtmltopdf
-  tar xvjf $WKH_TAR_FILE -C vendor/wkhtmltopdf
+  tar xvJf $WKH_TAR_FILE -C vendor/wkhtmltopdf
   rm $WKH_TAR_FILE
-  chmod +x vendor/wkhtmltopdf/wkhtmltopdf-amd64
+  chmod +x vendor/wkhtmltopdf/wkhtmltox/bin/wkhtmltopdf
   echo "-----> Done installing wkhtmltopdf."
 }
