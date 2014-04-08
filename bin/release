@@ -4,7 +4,6 @@
 cat <<EOF
 ---
 config_vars:
-  wkhtmltopdf: /app/vendor/wkhtmltopdf/wkhtmltox/bin/wkhtmltopdf
 addons:
 
 EOF
