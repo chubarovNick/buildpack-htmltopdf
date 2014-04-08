@@ -4,10 +4,10 @@
 cat <<EOF
 ---
 config_vars:
-  html2pdf.command: /app/vendor/wkhtmltopdf/wkhtmltopdf-amd64 __SOURCEFILE__ __OUTFILE__
+  WKHTMLTOPDF_BINARY: /app/vendor/wkhtmltopdf/wkhtmltox/bin/wkhtmltopdf
 addons:
 
 EOF
 
 echo "usage:"
-echo "  /app/vendor/wkhtmltopdf/wkhtmltopdf-amd64 file.html file.pdf"
+echo "  /app/vendor/wkhtmltopdf/wkhtmltox/bin/wkhtmltopdf file.html file.pdf"
