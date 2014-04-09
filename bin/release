@@ -4,7 +4,7 @@
 cat <<EOF
 ---
 config_vars:
-  WKHTMLTOPDF_BINARY: /app/vendor/wkhtmltopdf/wkhtmltox/bin/wkhtmltopdf
+  WKHTMLTOPDF_BINARY: /app/vendor/wkhtmltopdf/wkhtmltox-0.12.1-b3e000e/bin/wkhtmltopdf
 addons:
 
 EOF
