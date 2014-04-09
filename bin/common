@@ -3,7 +3,7 @@
 install_wkhtmltopdf()
 {
   cd $BUILD_DIR
-  WKH_URL="http://heanet.dl.sourceforge.net/project/wkhtmltopdf/0.12.0/wkhtmltox-linux-amd64_0.12.0-03c001d.tar.xz"
+  WKH_URL="http://skylink.dl.sourceforge.net/project/wkhtmltopdf/0.12.1-dev/wkhtmltox-0.12.1-b3e000e_linux-wheezy-amd64.tar.xz"
   WKH_TAR_FILE="wkhtmltox-linux-amd64_0.12.0-03c001d.tar.xz"
   echo "-----> Installing wkhtmltopdf..."
   curl --silent --max-time 150 --location $WKH_URL -o $WKH_TAR_FILE
