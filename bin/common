@@ -14,6 +14,6 @@ install_wkhtmltopdf()
   mkdir -p vendor/wkhtmltopdf
   tar xvJf $WKH_TAR_FILE -C vendor/wkhtmltopdf
   rm $WKH_TAR_FILE
-  chmod +x vendor/wkhtmltopdf/wkhtmltox-0.12.1-b3e000e/bin/wkhtmltopdf
+  chmod +x vendor/wkhtmltopdf/wkhtmltox-0.12.1-03c001d/bin/wkhtmltopdf
   echo "-----> Done installing wkhtmltopdf."
 }
